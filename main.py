@@ -2,7 +2,7 @@ import csv
 
 
 def select_sorted(sort_columns, limit, group_by_name, order, filename):
-    with open('all_stocks_5yr.csv', 'r') as f:
+    with open('dump2/all_stocks_5yr.csv', 'r') as f:
         reader = csv.DictReader(f)
         data = list(reader)
     if group_by_name:
